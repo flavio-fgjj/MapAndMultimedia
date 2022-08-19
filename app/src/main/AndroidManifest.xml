@@ -18,6 +18,9 @@
         android:theme="@style/Theme.MapAndMultimedia"
         tools:targetApi="31">
         <activity
+            android:name=".VideosMediaPlayer"
+            android:exported="false" />
+        <activity
             android:name=".SonsAudios"
             android:exported="false" />
         <activity
