@@ -9,6 +9,13 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/media_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_baseline_perm_media_24" />
+
     <Button
         android:id="@+id/btnAccessPhotos"
         android:layout_width="match_parent"
@@ -29,7 +36,11 @@
         android:gravity="left"
         android:text="Usando WebView em seus Apps"
         android:textSize="14dp"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="#eeeeee"
+        android:paddingTop="7dp"
+        android:layout_margin="10dp"/>
 
     <Button
         android:id="@+id/btnAccessAnimation"
@@ -38,5 +49,35 @@
         android:gravity="left"
         android:text="Animação em views com View Animation"
         android:textSize="14dp"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"
+        android:backgroundTint="@color/black"
+        android:textColor="#eeeeee"
+        android:paddingTop="7dp"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/btnAudios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Sons: AudioManager"
+        android:textSize="14dp"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="#eeeeee"
+        android:paddingTop="7dp"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/btnVideos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Vídeos: MediaPlayer"
+        android:textSize="14dp"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/black"
+        android:textColor="#eeeeee"
+        android:paddingTop="7dp"
+        android:layout_margin="10dp"/>
 </LinearLayout>

@@ -25,12 +25,12 @@ class RecuperandoFotosActivity : AppCompatActivity() {
         binding.textView5.text = equipes[4]
         binding.textView6.text = equipes[5]
 
-        val i1 = "https://st.depositphotos.com/1020341/4233/i/450/depositphotos_42333899-stock-photo-portrait-of-huge-beautiful-male.jpg"
-        val i2 = "https://t1.ea.ltmcdn.com/pt/posts/8/6/7/a_alimentacao_do_pinguim_20768_600.jpg"
-        val i3 = "https://ichef.bbci.co.uk/news/640/cpsprodpb/14A4B/production/_123355548_273225536_5387239747969927_3174953441515970260_n.jpg"
-        val i4 = "https://mega.ibxk.com.br/2014/10/31/31154830884249.jpg?ims=610x"
-        val i5 = "https://animalbusiness.com.br/wp-content/uploads/2020/07/tigre.jpg"
-        val i6 = "https://static.natgeo.pt/files/styles/image_3200/public/01-rats-cities-coronavirus-nationalgeographic_2721591.jpg?w=1600&h=1600"
+        val i1 = "https://img.favpng.com/11/13/14/baby-lions-cartoon-drawing-clip-art-png-favpng-nR6vbcLLXgf7jJ64R4tKbSC31.jpg"
+        val i2 = "https://lohitart.com/wp-content/uploads/2021/08/cute-penguin-drawing-and-kawaii-penguin-drawing.jpg"
+        val i3 = "https://i.etsystatic.com/10624284/r/il/0933a7/1914367051/il_fullxfull.1914367051_mrlr.jpg"
+        val i4 = "https://images.saatchiart.com/saatchi/678149/art/3419367/2489254-HSC00001-7.jpg"
+        val i5 = "https://c8.alamy.com/comp/2GHM6JJ/drawing-tiger-face-symbol-of-2022-new-year-for-poster-brochure-banner-invitation-card-vector-illustration-isolated-on-transparent-background-2GHM6JJ.jpg"
+        val i6 = "https://www.artmajeur.com/medias/standard/f/l/fleurelisenoble/artwork/12407207_fatrat-30x40-sml.jpg"
 
         Glide.with(this).load(i1).into(binding.imageView1)
         Glide.with(this).load(i2).into(binding.imageView2)
