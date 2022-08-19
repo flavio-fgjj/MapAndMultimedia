@@ -13,7 +13,7 @@ private lateinit var binding: ActivityVideosMediaPlayerBinding
 
 class VideosMediaPlayer : AppCompatActivity() {
     private var uri: Uri? = null
-    private var isContinously = false
+    private var isContinuously = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,10 +26,10 @@ class VideosMediaPlayer : AppCompatActivity() {
 
         mediaController.setAnchorView(vv)
 
-        val uriPath = "http://techslides.com/demos/sample-videos/small.mp4"
+        val uriPath = "https://player.vimeo.com/external/295046839.sd.mp4?s=82a76eec2e85e63006d8ad7821617cea7d11d28d&profile_id=164&oauth2_token_id=57447761"
         uri = Uri.parse(uriPath)
         vv.setOnCompletionListener {
-            if (isContinously) {
+            if (isContinuously) {
                 vv.start()
             }
         }
@@ -37,7 +37,7 @@ class VideosMediaPlayer : AppCompatActivity() {
         binding.btnstop.setOnClickListener { vv.pause() }
         binding.btnplay.setOnClickListener { vv.start() }
         binding.btnonce.setOnClickListener {
-            isContinously = false
+            isContinuously = false
             binding.progress.visibility = View.VISIBLE
             vv.setMediaController(mediaController)
             vv.setVideoURI(uri)
@@ -45,7 +45,7 @@ class VideosMediaPlayer : AppCompatActivity() {
             vv.start()
         }
         binding.btnconti.setOnClickListener {
-            isContinously = true
+            isContinuously = true
             binding.progress.visibility = View.VISIBLE
             vv.setMediaController(mediaController)
             vv.setVideoURI(uri)
