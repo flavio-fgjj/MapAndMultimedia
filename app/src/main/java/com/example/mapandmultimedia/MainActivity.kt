@@ -31,7 +31,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.btnAudios.setOnClickListener {  }
+        binding.btnAudios.setOnClickListener {
+            val intent = Intent(this, SonsAudios::class.java)
+            startActivity(intent)
+        }
 
         binding.btnVideos.setOnClickListener {  }
     }
