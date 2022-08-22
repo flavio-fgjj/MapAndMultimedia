@@ -40,6 +40,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, VideosMediaPlayer::class.java)
             startActivity(intent)
         }
+
+        binding.btnMaps.setOnClickListener {
+            val intent = Intent(this, MapActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 }

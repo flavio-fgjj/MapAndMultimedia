@@ -17,6 +17,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MapAndMultimedia"
         tools:targetApi="31">
+
+        <activity
+            android:name=".MapActivity"
+            android:exported="false" />
         <activity
             android:name=".VideosMediaPlayer"
             android:exported="false" />
